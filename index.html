@@ -12,8 +12,8 @@
   <header class="page-header">
     <div class="page-header__container">
 
-      <a class="nav__logo logo" href="#" aria-label="Логотип Device">
-        <img class="nav__logo-img" src="" alt="Логотип Девайс.">
+      <a class="page-header__logo logo" href="#">
+        <img class="logo__img img--header" src="" alt="Логотип интернет-магазина Девайс.">
       </a>
       <div class="page-header__group">
 
@@ -52,16 +52,16 @@
             <button class="menu__link menu__link--catalog" aria-haspopup="true">Каталог товаров</button>
             <ul class="catalog-menu">
               <li class="catalog-menu__item">
-                <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
-                <a href="catalog.html" class="catalog-menu__link">Моноподы для cелфи</a>
-                <a href="#" class="catalog-menu__link">Экшн-камеры</a>
+                <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
+                <a class="catalog-menu__link" href="catalog.html">Моноподы для cелфи</a>
+                <a class="catalog-menu__link" href="#">Экшн-камеры</a>
               </li>
               <li class="catalog-menu__item">
-                <a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
-                <a href="#" class="catalog-menu__link">Умные часы</a>
+                <a class="catalog-menu__link" href="#">Фитнес-браслеты</a>
+                <a class="catalog-menu__link" href="#">Умные часы</a>
               </li>
               <li class="catalog-menu__item">
-                <a href="#" class="catalog-menu__link">Квадрокоптеры</a>
+                <a class="catalog-menu__link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -80,7 +80,7 @@
   </header>
 </div>
 
-<main class="main-content">
+<main class="main-index">
   <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
   <div class="container">
 
@@ -95,8 +95,7 @@
             <div class="slide__wrapper-description">
               <span class="slide__number">01</span>
               <h3 class="slide__title title">Порхает как бабочка, <br> жалит как пчела!</h3>
-              <p class="slide__text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </p>
+              <p class="slide__text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="slide__link btn-more button-link">Подробнее</a>
               <table class="slide__details details">
                 <tr class="details_row detail">
@@ -189,7 +188,7 @@
           </a>
         </li>
         <li class="categories__item">
-          <a class="categories__link" href="#">
+          <a class="categories__link" href="catalog.html">
             <span class="categories__img"><img class="" width="160px" height="160px" src="" alt=""></span>
             <span class="categories__description">Моноподы<br>для селфи</span>
           </a>
@@ -239,7 +238,7 @@
         </li>
       </ul>
       <ul class="service__descriptions">
-        <li class="service__description">
+        <li class="service__description service__description--active">
           <h3 class="service__description-title title">Доставка</h3>
           <p class="service__description-text text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь
@@ -272,7 +271,7 @@
   <!------------------   Раздел о компании ------------------------>
   <div class="container">
     <div class="about-company-wrapper">
-      <section class="about-us">
+      <section class="about-us decor decor--about">
         <h2 class="about-us__title title">О нас</h2>
         <p class="about-us__description text"> Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.</p>
@@ -282,12 +281,11 @@
           <li class="transport-companies__item">Меловые линии</li>
           <li class="transport-companies__item">СДИК</li>
           <li class="transport-companies__item">ТоксБерри</li>
-          button-link button-service
         </ul>
         <a class="button button-link button-link--wide" href="#">Подробнее о нас</a>
       </section>
       <!--     Контакты компании -->
-      <section class="contacts-company">
+      <section class="contacts-company decor decor--contacts">
         <h2 class="contacts-company__title text--font--secondary text--title">Контакты</h2>
         <div class="contacts-company__container">
           <p class="contacts-company__description text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
@@ -321,7 +319,7 @@
         и вот это вот всё.
       </p>
       <form class="subscribing newsletter__subscribing" action="https://echo.htmlacademy.ru/">
-        <label for="subscribing-field" class="visually-hidden"></label>
+        <label class="visually-hidden" for="subscribing-field"></label>
         <input class="subscribing__field" name="subscribing-field" id="subscribing-field" type="text" placeholder="Ваш e-mail">
         <button class="subscribing__button"></button>
       </form>
@@ -333,7 +331,9 @@
 <!----------------------------- Футер главной страницы -------------->
 <footer class="page-footer">
   <div class="container">
-    <a class="logo page-footer__logo" href="#"><span class=" visually-hidden">Логотип Device</span></a>
+    <a class="page-footer__logo logo" href="#">
+      <img class="logo__img--footer" src="" alt="Логотип интернет-магазина Девайс.">
+    </a>
 
     <div class="page-footer__group">
 
@@ -367,7 +367,10 @@
         <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden"
                                                                         lang="en">Twitter.</span></a></li>
       </ul>
-      <a class="page-footer__logo-htmlacademy"><span class="visually-hidden">Логотип htmlacademy</span></a>
+      <a class="page-footer__logo-htmlacademy logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+         title="HTML и CSS. Профессиональная вёрстка сайтов" aria-label="Логотип htmlacademy">
+        <img class="logo-htmlacademy__img" src="" alt="Логотип HTML Academy">
+      </a>
     </div>
   </div>
 </footer>
